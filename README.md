@@ -12,16 +12,5 @@ Knowledge fragmentation has long been a problem in computational toxicology. By 
 ### Results
 <img src="./result-tables.png" width="600"/>
 
-### Build docker image
-```bash
-docker build -t cool-mmm .
-```
-
-### Run docker process
-```bash
-docker run --rm -d -p 8501:8501 -v `pwd`:/app/mmm -w /app/mmm/src --shm-size=10g -u `id -u`:`id -g` \
--e PYTHONPATH=/app/mmm/src cool-mmm streamlit run smart_demo.py
-```
-Then SMaRt UI dashboard can be accessed at http://127.0.0.1:8501:
-
-<img src="./dashboard.png" width="900"/>
+### SMaRt UI Dashboard
+<img src="./dashboard.png" width="800"/>
